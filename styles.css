@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-regular;
+}
+
+@font-face {
+    font-family: sans-medium;
+    src: url("./assets/fonts/GeneralSans-Medium.otf");
+}
+
+@font-face{
+    font-family: sans-regular;
+    src: url("./assets/fonts/GeneralSans-Regular.otf");
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+#circle{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: .9;
+    background-color: #fff;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+}
+
+nav{
+    height: 13vh;
+    width: 100%;
+    font-family: sans-medium;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vh;
+    background-color: #000;
+    position: fixed;
+    top: 10px;
+    z-index: 909;
+}
+
+nav #nav-left{
+    font-size: large;
+    font-weight: 600;
+}
+
+nav #nav-right span{
+    opacity: 0.6;
+}
+
+#home-heading{
+    margin: 14vh 0 0 6vh ;
+    margin-top: 26vh;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .bounding-elem{
+    transform: translateY(100%);
+}
+
+#home-heading h1{
+    font-size: 10.2vw;
+    line-height: 0.9;
+    font: 900;
+    color: #a3a3a3;
+    letter-spacing: 0.3vw;
+}
+
+#home-heading #block-text{
+    width: fit-content;
+    padding-left: 11vw;
+    display: inline-block;
+    margin-bottom: 14vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#home-heading #block-text .bounding:nth-child(2) h5{
+    text-align: right;
+    font-size: medium;
+    margin-top: 20px;   
+}
+
+#home-bottom #bottom-first{
+    padding: 10px 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+#home-bottom #bottom-second{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vh;
+    font-family: sans-medium;
+}
+
+#home-bottom div:nth-child(2) a:nth-child(2){
+    margin-right: 30vh ;
+}
+
+#home-bottom div:nth-child(2) div>i{
+    padding: 5px 5px;
+    border-radius: 100%;
+    background-color: #AAAAAA;
+    color: #000;
+    font-weight: 600;
+    flex-wrap: nowrap;
+}
+
+#page2{
+    height: 100%;
+    widows: 100%;
+    background: #000;
+    padding: 0 20vh 0 5vh;
+    position: relative;
+}
+
+.elem{
+    width: 100%;
+    border-top: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 2vh;
+    padding-right: 0;
+    position: relative;
+}
+
+.elem h1{
+    font-size: 7.3vw;
+    letter-spacing: 2px;
+    opacity: .6;
+}
+
+.bottom-border{
+    border-bottom: 1px solid #888;
+}
+
+.elem img{
+    height: 140%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.about-me{
+    background-color: #000;
+    display: flex;
+    gap: 6vw;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25vh;
+    margin: 15vw 0 5vw 0;
+}
+
+.about-me .img-about img{
+    height: 240px;
+    margin-left: 20vw;
+    margin-bottom: 8vh;
+}
+
+.about-me .text-sec h5{
+    opacity: .7;
+    font-weight: 100;
+}
+
+.about-me .text-sec p{
+    font-size: large;
+    min-width: 450px;
+    line-height: 1.5;
+    font-family: sans-medium;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.about-me .text-sec button{
+    padding: 5px 22px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    background-color: transparent;
+    transition:all 0.3s ease;
+}
+
+.about-me .text-sec button:hover {
+    background-color: white;
+    color: black;
+}
+
+.subscribe{
+    padding: 10px 6vh;
+    margin-top: 10vw;
+    margin-bottom: 15vh;
+}
+
+.subscribe h5{
+    opacity: .7;
+    font-size: 1vw;
+    font-weight: 100;
+    margin-bottom: 8px;
+}
+
+.subscribe h4{
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 3vh 6vh;
+}
+
+footer .right-sec,.left-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7vh;
+    font-weight: 100;
+}
+
+footer .left-sec{
+    font-size: small;
+}
